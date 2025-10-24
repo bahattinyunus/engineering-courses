@@ -186,6 +186,6 @@ Burada
 ---
 
 > 💬 “Elektrik makinelerini öğrenmek, geleceğin enerjisini yönetmek demektir.”  
-> – Bahattin Yunus Çetin ⚡💻  
+> –  
 
 ---
