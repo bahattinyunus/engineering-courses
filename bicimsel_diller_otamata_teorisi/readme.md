@@ -1,3 +1,133 @@
+# 🧠 Biçimsel Diller ve Otomata Teorisi
+
+Bu dersin amacı, bilgisayarların **neleri yapabileceğini** ve **hangi sınırlar içinde çalıştığını** anlamaktır.  
+Yani sadece nasıl kod yazıldığını değil, bir bilgisayarın **mantıksal sınırlarını** keşfetmeyi öğretir.  
+
+---
+
+## ⚙️ 1. Biçimsel Dil (Formal Language)
+
+Bir **biçimsel dil**, belirli **kurallara göre oluşturulmuş semboller dizisidir**.
+
+**Örnek:**
+
+Alfabemiz:
+
+Olası kelimeler:  
+`a`, `b`, `ab`, `aab`, `abba`, ...
+
+Kural: “Her `a`’nın ardından bir `b` gelmeli.”  
+Geçerli kelimeler: `ab`, `aabb`  
+Geçersiz kelimeler: `aa`, `aba`
+
+Bu kuralları tanımlayan yapıya **gramer (grammar)** denir.
+
+---
+
+## ⚙️ 2. Otomata (Automata)
+
+“Otomata”, belirli kurallara göre sembol dizilerini okuyan ve **kabul / red** kararı veren soyut makineleri ifade eder.  
+Bu makineler, programların mantıksal temelini oluşturur.
+
+---
+
+## ⚙️ 3. Otomata Türleri
+
+### 🟢 1. Deterministik Sonlu Otomat (DFA)
+
+- Belirli sayıda durumu vardır.  
+- Her sembol için tek geçiş tanımlıdır.  
+- Kabul veya red kararı verir.
+
+**Örnek:**  
+“Çift sayıda ‘a’ içeren kelimeleri kabul et.”
+
+---
+
+### 🟡 2. Non-Deterministik Sonlu Otomat (NFA)
+
+- Bir sembol için **birden fazla** geçiş olabilir.  
+- Bazı durumlarda sembol okumadan (ε) geçiş yapılabilir.  
+- Teorik olarak DFA ile **eşdeğer güçtedir.**
+
+---
+
+### 🔵 3. Yığınlı Otomat (PDA)
+
+- Yığıt (stack) yapısı kullanır.  
+- Parantez dengesi gibi iç içe yapıları tanır.  
+- Örnek: `(()())` geçerli, `(()` geçersiz.
+
+---
+
+### 🔴 4. Turing Makinesi (TM)
+
+- En güçlü modeldir.  
+- Sonsuz bir bant üzerinde okuma-yazma kafasıyla çalışır.  
+- Günümüz bilgisayarlarının teorik temelidir.
+
+---
+
+## 📚 4. Chomsky Hiyerarşisi
+
+| Seviye | Dil Türü | Otomat Türü | Örnek |
+|--------|-----------|--------------|--------|
+| Tip 0 | Turing Dili | Turing Makinesi | Herhangi bir algoritma |
+| Tip 1 | Bağlama duyarlı | Linearly bounded automaton | Programlama dilleri |
+| Tip 2 | Bağlamdan bağımsız | Yığınlı Otomat | Parantez dengesi, ifadeler |
+| Tip 3 | Düzenli | Sonlu Otomat | Regex desenleri |
+
+---
+
+## 🎯 5. Gerçek Hayat Bağlantıları
+
+- **Regex (Regular Expression)** → DFA / NFA tabanlıdır.  
+- **Derleyiciler** → PDA ve gramer analizine dayanır.  
+- **NLP & Yapay Zekâ** → Biçimsel dil mantığı kullanır.  
+
+---
+
+# 🟢 DFA (Deterministic Finite Automaton)
+
+## 1. Tanım
+> Belirli sayıda durumu olan ve her sembolde tek geçiş yapan bir otomat türüdür.
+
+Formel gösterim:
+
+| Sembol | Anlam |
+|--------|--------|
+| Q | Durum kümesi |
+| Σ | Alfabe |
+| δ | Geçiş fonksiyonu |
+| q₀ | Başlangıç durumu |
+| F | Kabul durumları |
+
+---
+
+## 2. Örnek: “a sayısı çift olan kelimeler”
+
+### Alfabe
+
+---
+
+## 3. Girdi Örnekleri
+
+| Girdi | a sayısı | Son Durum | Kabul mü? |
+|--------|-----------|------------|-----------|
+| ε | 0 | q₀ | ✅ |
+| a | 1 | q₁ | ❌ |
+| aa | 2 | q₀ | ✅ |
+| aba | 2 | q₀ | ✅ |
+| abb | 1 | q₁ | ❌ |
+
+---
+
+# 🟡 NFA (Non-Deterministic Finite Automaton)
+
+## 1. Tanım
+> NFA, bir sembolde birden fazla geçiş yapabilen, hatta sembol okumadan (ε) da hareket edebilen otomat türüdür.
+
+Formel gösterim:
 
 (*) kabul durumu
 
