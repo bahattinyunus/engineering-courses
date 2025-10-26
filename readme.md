@@ -1,4 +1,4 @@
-# 🎉 engineering-courses — Ders Notları & Kişisel Notlar
+#  engineering-courses — Ders Notları & Kişisel Notlar
 
 > *“Merak ettiklerimi not ettim; çünkü merak, öğrenmenin ilk kıvılcımıdır.”* ✨
 
