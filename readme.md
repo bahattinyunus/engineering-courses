@@ -1,89 +1,116 @@
 # 🎉 engineering-courses — Ders Notları & Kişisel Notlar
 
-> “Merak ettiklerimi not ettim; çünkü merak, öğrenmenin ilk kıvılcımıdır.” ✨
+> *“Merak ettiklerimi not ettim; çünkü merak, öğrenmenin ilk kıvılcımıdır.”* ✨
 
-Bu repo, üniversite ve kişisel çalışmalarım sırasında derlediğim ders notları, çözüm örnekleri ve kısa özetleri barındırır. İçerikler Türkçe hazırlanmıştır ve zamanla yeni dersler/bölümler eklenecektir — yani bu depo canlı bir çalışma alanıdır! 🚀
-
----
-
-## İçindekiler
-
-- Giriş ve amaç
-- Depo yapısı (klasörler)
-- Nasıl gezinilir
-- Yakında eklenecek bölümler
-- Katkıda bulunma ve lisans
+Bu repo, **üniversite dersleri** ve **kişisel çalışmalarım** sırasında tuttuğum notlar, çözüm örnekleri ve özetlerden oluşur.
+İçerikler **Türkçe** hazırlanmıştır ve zamanla yeni dersler eklenecektir — yani bu depo **canlı bir öğrenme alanıdır!** 🚀
 
 ---
 
-## Depo Yapısı (kısa)
+## 📘 İçindekiler
 
-- `analog_elektronik/` — Temel ve ileri analog elektronik; devre analizleri ve örnekler.
-- `Antenler_Propagasyon/` — Anten tipleri, karakteristikleri ve radyo dalgası yayılımı.
-- `bicimsel_diller_otamata_teorisi/` — Biçimsel diller, otomatlar, gramerler.
-- `elektrik_motorları/` — Motor tipleri, çalışma prensipleri ve uygulama notları.
-- `elektronik_devreler/` — Devre örnekleri, PCB notları, uygulamalı projeler.
-- `İLETİŞİM_elektroniği/` — Modülasyon, kodlama, haberleşme sistemleri.
-- `Sayısal_İşaret_İşleme/` — DSP, filtreler, spektral analiz.
-- `sayısal_tasarım/` — HDL, FPGA temelleri, mantık tasarımı.
-- `sistem_programlama/` — İşletim sistemi, bellek yönetimi, sistem çağrıları.
-- `yazılım_tasarım_mimarisi/` — Tasarım desenleri, mimari örnekler ve notlar.
-
-> Her klasörde varsa kendi `readme.md` dosyasına bakın — konuya özel açıklamalar ve kaynaklar oradadır.
+* 🎯 Giriş ve Amaç
+* 🗂️ Depo Yapısı
+* 🧭 Nasıl Gezilir
+* 🛣️ Yakında Eklenecekler (Roadmap)
+* 🤝 Katkıda Bulunma
+* ⚖️ Lisans
+* ✍️ Hazırlayan
 
 ---
 
-## Nasıl Gezilir
+## 🎯 Giriş ve Amaç
+
+Bu repoyu sadece ders geçmek için değil, **anlayarak öğrenmek** ve öğrendiklerimi açık biçimde paylaşmak için oluşturdum.
+Amaç; teknik konularda güçlü bir temel oluştururken, aynı zamanda öğrenme sürecini belgelendirmek.
+
+> Bilgi biriktirmek güzel ama paylaşmak **daha da kalıcı** hale getiriyor. 🌱
+
+---
+
+## 🗂️ Depo Yapısı
+
+Her klasör bir dersi temsil eder ve içinde notlar, örnekler, PDF’ler veya kısa açıklamalar bulunur.
+
+```
+📦 engineering-courses
+ ┣ 📁 analog_elektronik/
+ ┣ 📁 Antenler_Propagasyon/
+ ┣ 📁 bicimsel_diller_otamata_teorisi/
+ ┣ 📁 elektrik_motorları/
+ ┣ 📁 elektronik_devreler/
+ ┣ 📁 İLETİŞİM_elektroniği/
+ ┣ 📁 Sayısal_İşaret_İşleme/
+ ┣ 📁 sayısal_tasarım/
+ ┣ 📁 sistem_programlama/
+ ┗ 📁 yazılım_tasarım_mimarisi/
+```
+
+> Her klasörde varsa kendi `README.md` dosyasına göz atın — konuya özel açıklamalar, görseller ve kaynaklar oradadır.
+
+---
+
+## 🧭 Nasıl Gezilir
 
 1. Repo köküne gidin:
 
-```powershell
-cd "c:\github repolarım\engineering-courses"
-```
+   ```powershell
+   cd "C:\github repolarım\engineering-courses"
+   ```
 
-2. İlgili klasöre girip içeriğe bakın:
+2. İlgili klasöre geçin ve içeriğe göz atın:
 
-```powershell
-cd analog_elektronik
-ls
-```
+   ```powershell
+   cd analog_elektronik
+   ls
+   ```
 
-3. Notlar Markdown, PDF veya örnek kod şeklinde olabilir.
-
----
-
-## Yakında eklenecek (Roadmap)
-
-- Ders özetleri (kısa kartlar) — Her klasöre eklenecek.
-- Örnek sınav soruları ve çözümleri.
-- Ders içi proje örnekleri ve küçük uygulamalar (kod + devre şeması).
-- İngilizce özetler (isteğe bağlı).
-
-Yeni bölümler eklendikçe buraya tarih ve kısa not düşülecektir. Eğer siz de bir ders katkısı yapacaksanız, roadmap'e eklemeyi teklif edin! 🗺️
+3. Notlar `.md`, `.pdf` veya örnek kod dosyaları şeklinde olabilir.
 
 ---
 
-## Katkıda Bulunma
+## 🛣️ Yakında Eklenecekler (Roadmap)
 
-- Hatalı bir bilgi, eksik içerik veya eklemek istediğiniz materyal varsa lütfen issue açın veya PR gönderin.
-- Küçük düzenlemeler için doğrudan PR; büyük içerik değişiklikleri için önce issue ile tartışma önerilir.
+🔜 Bu repo dinamik bir şekilde büyüyor. Yakında eklenecek içerikler:
 
-PR şablonu veya katkı rehberi eklemek isterseniz, birlikte hazırlayalım — katkı akışını basitleştirelim.
+* 🧩 Her klasöre kısa **ders kartları (özet notlar)**
+* 📄 Örnek sınav soruları ve çözümleri
+* 💡 Ders içi mini projeler (kod + devre şeması)
+* 🌍 İngilizce özetler (isteğe bağlı)
+* 🧠 Hukuk, sosyoloji ve yapay zekâ temalı ek bölümler
 
----
-
-## Lisans
-
-Bu repo eğitim amacıyla hazırlanmıştır. Lisans olarak `MIT` eklemeyi öneriyorum; isterseniz ben `LICENSE` dosyası ekleyebilirim.
-
----
-
-## Hazırlayan
-
-Bahattin Yunus Çetin
-
-E-posta/Profil bilgilerini eklemek isterseniz, `README` güncellenebilir.
+> Yeni bölümler eklendikçe tarih ve açıklama burada listelenecektir.
+> Katkı yapmak istersen, roadmap’e fikir ekleyebilirsin! 🗺️
 
 ---
 
-Teşekkürler — bu depo canlıdır ve büyüyecektir. Daha cafcaflı (renkli/görsel) bir görünüm isterseniz, klasörlere görsel önizleme veya badge'ler ekleyebiliriz; isterseniz onları da ekleyeyim. 🎨
+## 🤝 Katkıda Bulunma
+
+* Hatalı bilgi, eksik içerik veya eklemek istediğin materyal mi var?
+  → **Issue aç** veya **Pull Request** gönder.
+* Küçük düzenlemeler için doğrudan PR,
+  büyük içerik değişiklikleri için önce tartışma açman önerilir.
+
+> İstersen seninle birlikte PR şablonu ve katkı rehberi de hazırlayabiliriz — süreç daha akıcı olur. ⚙️
+
+---
+
+## ⚖️ Lisans
+
+Bu repo **eğitim ve paylaşım amacıyla** hazırlanmıştır.
+Lisans olarak `MIT` önerilmektedir.
+İstersen `LICENSE` dosyasını birlikte oluşturabiliriz. 🧾
+
+---
+
+## ✍️ Hazırlayan
+
+**Bahattin Yunus Çetin**
+🎓 Yazılım Mühendisliği Öğrencisi
+💬 İlgi Alanları: Yapay Zekâ, Hukuk, Veri Bilimi
+🔗 [LinkedIn](#) • [GitHub](#) • [Email](#)
+
+---
+
+> 🧠 “Bilim, sadece öğrenmekle değil; anlamakla başlar.”
+> Bu repo, o anlamın izini süren bir yolculuğun not defteri. 🌌
