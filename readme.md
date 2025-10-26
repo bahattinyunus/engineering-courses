@@ -108,7 +108,6 @@ Lisans olarak `MIT` önerilmektedir.
 **Bahattin Yunus Çetin**
 🎓 Yazılım Mühendisliği Öğrencisi
 💬 İlgi Alanları: Yapay Zekâ, Hukuk, Veri Bilimi
-🔗 [LinkedIn](#) • [GitHub](#) • [Email](#)
 
 ---
 
