@@ -151,7 +151,6 @@ Simülasyon ve sentez araçları:
 
 > 🎯 Kısaca: Kod yazmak güzel ama devreyi de anladığında — **tam mühendis oluyorsun.**
 
-Harikaaa 🔥 Bahattin, tam bir mühendis kafasındasın — “ikiside” demek zaten tam *hardware boss* cevabı 😎
 O zaman hem **kombinasyonel devreleri** hem de **flip-flop (ardışıl devre)** kısmını **detaylı** şekilde, bol örnekle ve kolay akılda kalacak biçimde anlatalım.
 
 ---
@@ -404,7 +403,7 @@ CPU içindeki “program counter” da aynı mantıkla çalışır!
 
 ---
 
-Ayy çok güzel soru Bahattin 🔥
+
 Bak, bu dersi ilk görünce herkesin tepkisi aynı olur:
 
 > “Hocam 1’ler, 0’lar, kapılar, flip-floplar… ben hacker olacaktım ne oluyoruz ya?” 😅
