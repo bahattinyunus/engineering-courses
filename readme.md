@@ -30,20 +30,55 @@ Amaç; teknik konularda güçlü bir temel oluştururken, aynı zamanda öğrenm
 
 ## 🗂️ Depo Yapısı
 
-Her klasör bir dersi temsil eder ve içinde notlar, örnekler, PDF’ler veya kısa açıklamalar bulunur.
+Her klasör bir dersi temsil eder ve içinde notlar, örnekler, PDF'ler veya kısa açıklamalar bulunur.
+
+### 📚 Temel Mühendislik Dersleri
 
 ```
 📦 engineering-courses
- ┣ 📁 analog_elektronik/
- ┣ 📁 Antenler_Propagasyon/
- ┣ 📁 bicimsel_diller_otamata_teorisi/
- ┣ 📁 elektrik_motorları/
- ┣ 📁 elektronik_devreler/
- ┣ 📁 İLETİŞİM_elektroniği/
- ┣ 📁 Sayısal_İşaret_İşleme/
- ┣ 📁 sayısal_tasarım/
- ┣ 📁 sistem_programlama/
- ┗ 📁 yazılım_tasarım_mimarisi/
+ ┣ 📁 algoritma/                    # Algoritma ve veri yapıları
+ ┣ 📁 analog_elektronik/           # Analog elektronik devreler
+ ┣ 📁 analog_haberlesme/            # Analog haberleşme sistemleri
+ ┣ 📁 Antenler_Propagasyon/         # Antenler ve dalga yayılımı
+ ┣ 📁 betik_diller/                # Scripting languages (Python, Bash, vb.)
+ ┣ 📁 bicimsel_diller_otamata_teorisi/  # Formal languages & automata
+ ┣ 📁 elektrik_motorları/          # Elektrik motorları
+ ┣ 📁 elektronik_devreler/          # Elektronik devre analizi
+ ┣ 📁 fizik/                       # Fizik temelleri
+ ┣ 📁 görüntü_isleme/              # Görüntü işleme ve computer vision
+ ┣ 📁 İLETİŞİM_elektroniği/        # İletişim elektroniği
+ ┣ 📁 işletim_sistemleri/           # Operating systems
+ ┣ 📁 Sayısal_İşaret_İşleme/       # Digital signal processing
+ ┣ 📁 sayısal_tasarım/              # Digital design
+ ┣ 📁 sistem_programlama/           # System programming
+ ┣ 📁 veri tabanı/                  # Database systems
+ ┗ 📁 yazılım_tasarım_mimarisi/     # Software design & architecture
+```
+
+### 🎓 Sosyal ve Disiplinlerarası Dersler
+
+```
+ ┣ 📁 hukuk/                       # Hukuk dersleri
+ ┃  ┗ 📁 medeni_hukuk/            # Medeni hukuk
+ ┗ 📁 iktisat/                    # İktisat dersleri
+    ├ 📄 ek.md
+    ├ 📄 grafik.md
+    ├ 📄 readme.md
+    ┗ 📄 sozluk.md
+```
+
+### 🚀 Vizyon ve Gelecek Teknolojileri
+
+```
+ ┗ 📁 vizyon/                      # Gelecek teknolojileri ve vizyon
+    ├ 📁 3d_print_ai/             # 3D printing & AI
+    ├ 📁 bcı/                      # Brain-computer interface
+    ├ 📁 biyoteknik_nanotıp/      # Biyoteknik & nanoteknoloji
+    ├ 📁 contex_engineering/      # Context engineering
+    ├ 📁 fintek_ai/                # Fintech & AI
+    ├ 📁 metaverse/                # Metaverse teknolojileri
+    ├ 📁 nanateknoloji_ai/         # Nanotechnology & AI
+    ┗ 📄 readme.md
 ```
 
 > Her klasörde varsa kendi `README.md` dosyasına göz atın — konuya özel açıklamalar, görseller ve kaynaklar oradadır.
@@ -86,20 +121,22 @@ Her klasör bir dersi temsil eder ve içinde notlar, örnekler, PDF’ler veya k
 
 ## 🤝 Katkıda Bulunma
 
-* Hatalı bilgi, eksik içerik veya eklemek istediğin materyal mi var?
-  → **Issue aç** veya **Pull Request** gönder.
-* Küçük düzenlemeler için doğrudan PR,
-  büyük içerik değişiklikleri için önce tartışma açman önerilir.
+Bu repository açık kaynaklıdır ve katkılarınızı bekliyoruz! 🌟
 
-> İstersen seninle birlikte PR şablonu ve katkı rehberi de hazırlayabiliriz — süreç daha akıcı olur. ⚙️
+* Hatalı bilgi, eksik içerik veya eklemek istediğiniz materyal mi var?
+  → **Issue açın** veya **Pull Request** gönderin.
+* Küçük düzenlemeler için doğrudan PR,
+  büyük içerik değişiklikleri için önce tartışma açmanız önerilir.
+
+Detaylı katkı rehberi için [`CONTRIBUTING.md`](CONTRIBUTING.md) dosyasına bakabilirsiniz. ⚙️
 
 ---
 
 ## ⚖️ Lisans
 
 Bu repo **eğitim ve paylaşım amacıyla** hazırlanmıştır.
-Lisans olarak `MIT` önerilmektedir.
-İstersen `LICENSE` dosyasını birlikte oluşturabiliriz. 🧾
+Lisans olarak `MIT` kullanılmaktadır.
+Detaylar için `LICENSE` dosyasına bakabilirsiniz. 🧾
 
 ---
 
