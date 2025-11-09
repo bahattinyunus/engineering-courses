@@ -83,6 +83,18 @@ Her klasör bir dersi temsil eder ve içinde notlar, örnekler, PDF'ler veya kı
 
 > Her klasörde varsa kendi `README.md` dosyasına göz atın — konuya özel açıklamalar, görseller ve kaynaklar oradadır.
 
+### 💻 Kod Örnekleri
+
+Bazı klasörlerde `examples/` klasörü içinde konuyla ilgili kod örnekleri bulunmaktadır:
+
+- **algoritma/examples/** - Python algoritma örnekleri (Bubble Sort, Binary Search, vb.)
+- **betik_diller/examples/** - Python ve Bash script örnekleri
+- **veri tabanı/examples/** - SQL sorgu örnekleri
+- **fizik/examples/** - Fizik hesaplama kodları
+- **görüntü_isleme/examples/** - OpenCV görüntü işleme örnekleri
+
+> Kod örnekleri eğitim amaçlıdır ve doğrudan çalıştırılabilir. Her örnek için `README.md` dosyasında detaylı açıklamalar bulunmaktadır.
+
 ---
 
 ## 🧭 Nasıl Gezilir
