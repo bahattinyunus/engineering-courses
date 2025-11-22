@@ -1,3 +1,134 @@
+# 📘 **Otomata Teorisi — Temel Kavramlar ve Yapısal Çerçeve**
+
+Otomata teorisi, biçimsel dilleri tanımlamak ve girdi dizileri üzerinde karar verebilen soyut hesaplama modelleri geliştirmek için kullanılan matematiksel bir disiplindir. Bilgisayar biliminde derleyicilerden güvenlik sistemlerine, metin işlemcilerden protokol doğrulamasına kadar geniş bir alanda temel rol oynar.
+
+---
+
+## **1. Otomata Kavramı**
+
+Bir otomaton,
+- Sınırlı sayıda **duruma** sahip olan,
+- Dışarıdan aldığı her bir **girdi sembolü** ile durum değiştiren,
+- Girdi tamamlandığında **kabul veya ret** kararı veren
+bir soyut makinedir.
+
+Otomatonun bileşenleri genellikle şu beşli ile ifade edilir:
+
+\[
+M = (Q, \Sigma, \delta, q_0, F)
+\]
+
+- **Q:** Sonlu durum kümesi  
+- **Σ:** Girdi alfabesi  
+- **δ:** Geçiş fonksiyonu  
+- **q₀:** Başlangıç durumu  
+- **F:** Kabul durumlarının kümesi  
+
+---
+
+## **2. DFA (Deterministic Finite Automaton)**
+
+Deterministik sonlu otomaton, her girdi sembolü için **tek bir geçiş** tanımlayan ve herhangi bir anda **tek bir** durumda bulunabilen bir makinedir.
+
+Özellikleri:
+- Geçiş fonksiyonu δ tam olarak tanımlıdır.
+- Karar mekanizması nettir.
+- Her string için benzersiz çalıştırma yolu bulunur.
+
+DFA’lar hızlı, deterministik ve donanım seviyesinde uygulanmaya elverişlidir.
+
+---
+
+## **3. NFA (Nondeterministic Finite Automaton)**
+
+Nondeterministik sonlu otomaton, aynı anda **birden fazla olası durumda** bulunabiliyormuş gibi davranır.  
+Bir sembol için:
+- Birden fazla duruma geçiş olabilir,
+- Hiç geçiş olmayabilir,
+- **Epsilon (ε)** geçişi ile sembol tüketmeden durum değiştirilebilir.
+
+Özellikler:
+- Daha soyuttur.
+- Tanımlaması ve tasarımı DFA’ya göre daha kolaydır.
+- Hesaplama gücü DFA ile **eşdeğerdir**.
+
+---
+
+## **4. NFA → DFA Dönüşümü (Subset Construction)**
+
+Her NFA, deterministik hale getirilerek DFA’ya dönüştürülebilir.  
+Burada temel fikir:
+
+> “NFA’nın aynı anda olabileceği tüm durum kümeleri, DFA’da tek bir durum haline getirilir.”
+
+Adımlar:
+1. Başlangıç durumu = NFA’nın ε-closure(q₀) kümesi  
+2. Her sembol için yeni durum kümeleri oluşturulur  
+3. Her yeni küme DFA’da yeni bir durumdur  
+4. Bir kümede NFA’nın bir kabul durumu varsa, o küme DFA’da kabul durumudur  
+
+Bu yöntem sayesinde nondeterministik yapı deterministik bir forma dönüştürülür.
+
+---
+
+## **5. Düzenli İfadeler (Regular Expressions) ve Otomata**
+
+Düzenli ifadeler, düzenli dillerin **metinsel tanımlarıdır**.  
+Her regular expression:
+- Bir NFA’ya dönüştürülebilir (Thompson inşası),
+- Oradan DFA’ya dönüştürülebilir,
+- İstenirse tekrar regex’e çevrilebilir.
+
+Temel operasyonlar:
+- **Birleşim**: `a|b`
+- **Sıralı bağlama (concatenation)**: `ab`
+- **Kleene Yıldızı**: `a*`
+- **Artı**: `a+`
+- **Seçim ve grup**: `(ab|cd)e`
+
+Regular expression ↔ NFA ↔ DFA tamamen **eşdeğer** yeteneğe sahiptir.
+
+---
+
+## **6. Otomata ve Düzenli Dillerin Kapanma Özellikleri**
+
+Regular diller şu işlemler altında kapalıdır:
+- **Birleşim (Union)**  
+- **Kesişim (Intersection)**  
+- **Tümleyen (Complement)**  
+- **Fark (Difference)**  
+- **Concatenation (L₁L₂)**  
+- **Kleene Star (L*)**
+
+Bu matematiksel kapalı yapı, düzenli dillerin hem analizini hem de inşa edilmesini kolaylaştırır.
+
+---
+
+## **7. Uygulama Alanları**
+
+Otomata teorisi modern bilgisayar sistemlerinin temelinde yer alır:
+
+- Derleyici tasarımı (lexer, tokenization)
+- Veri doğrulama sistemleri
+- Arama motorları ve pattern matching
+- Ağ protokolü doğrulaması
+- Güvenlik duvarları
+- Metin işleme
+- Kriptografik protokol analizleri
+- Donanım tasarımı (CPU instruction decoder)
+
+Bu nedenle otomata teorisi, bilgisayar biliminin kavramsal iskeletini oluşturur.
+
+---
+
+## **8. Kısa Özet**
+
+- Otomata: Dilleri tanıyan soyut makineler.  
+- DFA: Deterministik, tek durumlu, her sembolde net geçişli.  
+- NFA: Nondeterministik, çoklu olası durumlu, ε-geçişli.  
+- Regex: Bu makinelerin dilsel ifadesi.  
+- Hepsi aynı dil sınıfını temsil eder: **Regular (Düzenli) Diller.**
+
 # 🧠 Biçimsel Diller ve Otomata Teorisi
 
 Bu dersin amacı, bilgisayarların **neleri yapabileceğini** ve **hangi sınırlar içinde çalıştığını** anlamaktır.  
@@ -183,126 +314,231 @@ NFA’lar sezgisel olarak kolay ama kararsızdır.
 DFA’lar kararlı ama katıdır.
 Bu yüzden NFA’yı DFA’ya çevirerek hem kararlılığı hem de aynı dili koruruz.
 
-⚙️ 1. Mantık Temeli
 
-Bir NFA aynı anda birden fazla durumda olabilir.
-DFA ise tek bir durumda olmalıdır.
-
-O yüzden NFA’nın her “durum kümesi”ni, DFA’da tek bir durum olarak temsil ederiz.
-
-NFA: {q₀, q₁}
-DFA: Q₀₁ (yeni bir birleşik durum)
-
-Buna subset construction (küme oluşturma) yöntemi denir.
-
-🧠 2. Adım Adım Örnek
-
-Verilen NFA:
-
-Durum	a	b
-q₀	{q₀, q₁}	{q₀}
-q₁	{q₂}	∅
-q₂	∅	∅
-
-Kabul durumları: {q₂}
-Başlangıç durumu: q₀
-
-🔹 Adım 1 — Başlangıç
-
-DFA’da ilk durum, NFA’nın başlangıç durumunun epsilon-closure’ıdır (yani ε geçişleriyle ulaşılabilen tüm durumlar).
-Burada ε yok, o yüzden DFA’nın başlangıç durumu {q₀}.
-
-🔹 Adım 2 — “a” ve “b” için yeni kümeler oluştur
-DFA Durumu	a	b
-{q₀}	{q₀, q₁}	{q₀}
-{q₀, q₁}	{q₀, q₁, q₂}	{q₀}
-{q₀, q₁, q₂}	{q₀, q₁, q₂}	{q₀}
-🔹 Adım 3 — Kabul durumlarını belirle
-
-Eğer NFA kümesi içinde q₂ (kabul durumu) varsa, DFA’daki o küme de kabul durumudur.
-Yani:
-
-Kabul durumları = { {q₀, q₁, q₂} }
-
-✅ Sonuç: Yeni DFA
-Durum	a	b	Kabul?
-{q₀}	{q₀, q₁}	{q₀}	❌
-{q₀, q₁}	{q₀, q₁, q₂}	{q₀}	❌
-{q₀, q₁, q₂}	{q₀, q₁, q₂}	{q₀}	✅
-
-Yani DFA, NFA’nın davranışını deterministik şekilde taklit eder.
-Bu yöntemle her NFA, %100 DFA’ya dönüştürülebilir. 💪
-
-🔁 Regular Expression ↔ Otomata İlişkisi
-
-Regular Expression (Düzenli İfade) ile DFA/NFA aslında aynı şeyi temsil eder.
-Fark sadece ifadede mi gösteriyorsun, yoksa makineyle mi?
-
-⚙️ 1. Regex → NFA
-
-Regex aslında otomata kurallarının “dil versiyonu”dur.
-Her regex ifadesi, bir NFA’ya dönüştürülebilir.
-
-Regex	Anlam	NFA Yorum
-a	sadece “a”	tek geçiş
-a*	sıfır veya daha fazla “a”	geri döngü (loop)
-`a	b`	“a” veya “b”
-ab	“a” ardından “b”	seri geçiş
-⚙️ 2. NFA → DFA → Regex Döngüsü
-
-Yani şu dönüşüm mümkündür:
-
-Regex ⇄ NFA ⇄ DFA
-
-
-💡 Örnek:
-
-Regex: a*b
-
-
-Bunu bir DFA olarak çizelim:
-
-(start) --a--> (loop a) --b--> (accept)
-
-
-veya tabloyla:
-
-Durum	a	b	Kabul?
-q₀	q₀	q₁	❌
-q₁	-	-	✅
-
-Bu DFA, “0 veya daha fazla ‘a’ ardından tek bir ‘b’” desenini tanır.
-
-⚡ 3. Regular Dillerin Özellikleri
-
-Regular diller DFA/NFA ile tanınabilir.
-
-Kapanma Özellikleri:
-
-Birleşim (Union): Eğer L₁ ve L₂ düzenliyse, L₁ ∪ L₂ de düzenlidir.
-
-Kesişim (Intersection): L₁ ∩ L₂ düzenlidir.
-
-Ters (Complement): L düzenliyse, L̅ de düzenlidir.
-
-Zincirleme (Concatenation): L₁L₂ düzenlidir.
-
-Yıldız (Kleene Star): L* düzenlidir.
-
-Yani regex’ler matematiksel olarak kapalı sistemlerdir — bu yüzden derleyici ve metin işleme sistemleri bu dili sever 😄
-
-🎓 Özet
-Dönüşüm	Açıklama
-NFA → DFA	Subset (küme) yöntemiyle yapılır
-Regex → NFA	Thompson inşası yöntemiyle yapılır
-DFA → Regex	Durum eleme (state elimination) yöntemiyle yapılır
-Regex ↔ DFA/NFA	Eşdeğer güçte temsil biçimleridir
-🧠 Sonuç
-
-NFA’lar soyut, DFA’lar kararlı.
-
-Regex’ler ise bu otomatların dil halidir.
 
 Her biri düzenli dillerin farklı bir temsilidir.
 
 Ve tümü, bilgisayar biliminin “mantıksal temelini” oluşturur. 💻
+# 🔹 Regex ve Otomata Rehberi
+
+Bu rehberde **Regular Expression (Düzenli İfade)**, **NFA** ve **DFA** arasındaki ilişkiyi, dönüşümleri ve temel mantığı adım adım öğrenebilirsiniz. 💻✨
+
+---
+
+## ⚙️ 1. Mantık Temeli
+
+- **NFA (Nondeterministic Finite Automaton)**: Aynı anda birden fazla durumda olabilir.  
+- **DFA (Deterministic Finite Automaton)**: Her an tek bir durumda olmalıdır.  
+
+💡 Bu yüzden NFA’nın her “durum kümesi”ni DFA’da tek bir durum olarak temsil ederiz.  
+Bu işleme **Subset Construction (Küme Oluşturma) Yöntemi** denir.
+
+| NFA          | DFA        |
+|-------------|------------|
+| {q₀, q₁}    | Q₀₁        |
+
+---
+
+## 🧠 2. Adım Adım Örnek
+
+**Verilen NFA:**
+
+| Durum | a        | b      |
+|-------|----------|--------|
+| q₀    | {q₀,q₁} | {q₀}   |
+| q₁    | {q₂}     | ∅      |
+| q₂    | ∅        | ∅      |
+
+- Başlangıç durumu: `q₀`  
+- Kabul durumu: `{q₂}`
+
+### 🔹 Adım 1 — Başlangıç
+
+DFA’nın ilk durumu, NFA başlangıç durumunun **epsilon-closure**’ıdır.  
+Burada ε yok, o yüzden DFA başlangıcı: `{q₀}`
+
+---
+
+### 🔹 Adım 2 — “a” ve “b” için yeni kümeler oluştur
+
+| DFA Durumu   | a          | b        |
+|-------------|------------|----------|
+| {q₀}        | {q₀,q₁}   | {q₀}    |
+| {q₀,q₁}     | {q₀,q₁,q₂}| {q₀}    |
+| {q₀,q₁,q₂}  | {q₀,q₁,q₂}| {q₀}    |
+
+---
+
+### 🔹 Adım 3 — Kabul Durumlarını Belirle
+
+Eğer NFA kümesinde `q₂` varsa, DFA’daki o küme kabul durumudur.
+
+**Kabul Durumları:** `{ {q₀,q₁,q₂} }`
+
+---
+
+### ✅ Sonuç: DFA Tablosu
+
+| Durum        | a          | b        | Kabul? |
+|-------------|------------|----------|--------|
+| {q₀}        | {q₀,q₁}   | {q₀}    | ❌     |
+| {q₀,q₁}     | {q₀,q₁,q₂}| {q₀}    | ❌     |
+| {q₀,q₁,q₂}  | {q₀,q₁,q₂}| {q₀}    | ✅     |
+
+> DFA, NFA’nın davranışını deterministik şekilde taklit eder.  
+> Bu yöntemle her NFA %100 DFA’ya dönüştürülebilir. 💪
+
+---
+
+## 🔁 Regular Expression ↔ Otomata İlişkisi
+
+- **Regex ↔ NFA**: Regex, otomata kurallarının dil versiyonudur.  
+- **NFA ↔ DFA**: Subset construction ile dönüşüm yapılır.  
+- **DFA ↔ Regex**: State elimination yöntemiyle DFA’dan regex elde edilebilir.
+
+### ⚙️ Örnek: Regex → NFA → DFA
+
+Regex: `a*b` → “0 veya daha fazla ‘a’ ardından tek bir ‘b’”
+
+**DFA ile temsil:**
+
+| Durum | a   | b   | Kabul? |
+|-------|-----|-----|--------|
+| q₀    | q₀  | q₁  | ❌     |
+| q₁    | -   | -   | ✅     |
+
+---
+
+## ⚡ 3. Regular Dillerin Özellikleri
+
+- **Birleşim (Union)**: L₁ ∪ L₂ düzenlidir.  
+- **Kesişim (Intersection)**: L₁ ∩ L₂ düzenlidir.  
+- **Ters (Complement)**: L̅ düzenlidir.  
+- **Zincirleme (Concatenation)**: L₁L₂ düzenlidir.  
+- **Kleene Star (Yıldız)**: L* düzenlidir.
+
+> Yani regex’ler matematiksel olarak kapalı sistemlerdir, derleyici ve metin işleme sistemleri bu dili çok sever 😄
+
+---
+
+## 🎓 Özet
+
+| Dönüşüm         | Yöntem / Açıklama                     |
+|-----------------|--------------------------------------|
+| NFA → DFA       | Subset (Küme) yöntemi                |
+| Regex → NFA     | Thompson inşası                       |
+| DFA → Regex     | State elimination                     |
+| Regex ↔ DFA/NFA | Eşdeğer güçte, sadece temsil farkı   |
+
+**🧠 Sonuç:**  
+- NFA: soyut ve esnek  
+- DFA: deterministik ve kararlı  
+- Regex: NFA/DFA’nın dil halidir  
+
+---
+
+🚀 Artık Regex, NFA ve DFA dünyasında yolun açık! 😎
+
+# 🔹 Regex & Otomata Rehberi — Part 2
+
+Part 1’de temel mantığı, subset construction ve örnek DFA’yı gördük.  
+Şimdi daha ileri örnekler, dönüşümler ve optimizasyonları inceleyelim. 💡
+
+---
+
+## 🧩 1. Daha Karmaşık NFA → DFA Örneği
+
+**NFA Örneği:**
+
+| Durum | a          | b      |
+|-------|------------|--------|
+| q₀    | {q₀,q₁}   | {q₀}   |
+| q₁    | {q₂}       | {q₃}   |
+| q₂    | ∅          | {q₃}   |
+| q₃    | ∅          | ∅      |
+
+- Başlangıç: `q₀`  
+- Kabul: `{q₃}`
+
+### 🔹 Adım Adım DFA Oluşturma
+
+| DFA Durumu     | a              | b            | Kabul? |
+|----------------|----------------|--------------|--------|
+| {q₀}           | {q₀,q₁}       | {q₀}         | ❌     |
+| {q₀,q₁}        | {q₀,q₁,q₂}    | {q₀,q₃}      | ❌     |
+| {q₀,q₁,q₂}     | {q₀,q₁,q₂}    | {q₀,q₃}      | ❌     |
+| {q₀,q₃}        | {q₀,q₁}       | {q₀}         | ✅     |
+
+> Daha karmaşık NFA’lar da bu adım adım yöntemle deterministik hale getirilebilir.  
+
+---
+
+## 🎨 2. DFA Optimizasyonu
+
+DFA oluşturduktan sonra gereksiz durumları **minimize** edebiliriz:
+
+- **Eşdeğer durumları birleştir:** Aynı geçişlere ve kabul durumuna sahip olanlar  
+- **Boş veya ulaşılmaz durumları kaldır:** DFA daha küçük ve hızlı olur
+
+> Minimized DFA, özellikle büyük regex ve dil tanımlamalarında hayat kurtarır ⚡
+
+---
+
+## 🔁 3. Regex ↔ NFA ↔ DFA Döngüsü
+
+### 🔹 Regex → NFA
+- Thompson Construction yöntemi ile  
+- Örnek: `(a|b)*abb`
+
+**Adımlar:**
+1. `a|b` → basit seçim NFA’sı  
+2. `*` → loop  
+3. `abb` → seri geçiş  
+4. Tümünü birleştir → tek NFA  
+
+---
+
+### 🔹 NFA → DFA
+- Subset construction ile deterministik hale getir  
+- Elde edilen DFA ile regex’in tanıdığı tüm stringleri deterministik biçimde tarayabilirsin  
+
+---
+
+### 🔹 DFA → Regex
+- State elimination yöntemi:  
+  1. Kabul olmayan durumları ve geçişleri sil  
+  2. Kalan durumları regex ifadeleri ile ifade et  
+- Karmaşık DFA’lar için biraz matematiksel işlem gerekebilir, ama her zaman mümkündür  
+
+---
+
+## ⚡ 4. Regex ve Otomata Arasındaki Güç Dengesi
+
+- **NFA**: Esnek, paralel durum takibi, daha az durum ama non-deterministic  
+- **DFA**: Deterministik, hızlı tarama, daha fazla durum  
+- **Regex**: İnsan okuyabilir dil, hızlı prototip, NFA/DFA’ya dönüşebilir  
+
+> Özetle: “Regex → NFA → DFA → optimize → regex” döngüsü  
+> Modern derleyici ve text engine’lerin temel çalışma prensibi 😎
+
+---
+
+## 📌 5. İleri Konseptler
+
+- **Epsilon geçişleri (ε-transitions)**: Durumlar arasında ücretsiz geçişler  
+- **Lazy DFA oluşturma**: Sadece kullanılan durumları oluştur, belleği koru  
+- **Regular Language Closure Properties**: Birleşim, kesişim, tamamlayıcı, yıldız, zincirleme → her zaman geçerli  
+
+---
+
+## 🎓 Sonuç
+
+- NFA → DFA: Subset construction  
+- DFA optimize: Eşdeğer durumları birleştir  
+- Regex ↔ Otomata: Her dil düzenli ise her gösterim eşdeğer  
+
+> Artık regex ve otomataların tüm dönüşümlerini hem teorik hem pratik olarak anlayabiliyorsun! 💪  
+
+---
+
+💡 **İpucu:** GitHub README’inde bu tabloların yanına **ASCII veya Graphviz diagramları** ekleyerek çok daha görsel ve anlaşılır hale getirebilirsin.
