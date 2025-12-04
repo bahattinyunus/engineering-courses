@@ -1,104 +1,95 @@
 
 
-# 🌐✨ Bilişim Sistemleri Mühendisliği README ✨🌐
+# 🧬⚙️ Biyomedikal Mühendisliği README
 
 ## 🎯 Amaç
-Bu README, bilişim sistemleri mühendisliğini **cafcaflı bir şekilde** tanıtmak için hazırlandı.  
-Hem teknik derinliği hem de görsel cazibeyi bir araya getirerek öğrenciler, profesyoneller ve meraklılar için rehber niteliği taşır.  
+Bu README, biyomedikal mühendisliğini tanıtmak, kullanılan yöntemleri, kariyer yollarını ve gelecekteki trendleri derli toplu bir şekilde sunmak için hazırlandı.  
 
 ---
 
 ## 🖥️ Genel Tanım
-Bilişim Sistemleri Mühendisliği, **teknoloji + iş dünyası + insan faktörü** üçlüsünü birleştiren bir disiplindir.  
-- **Teknoloji**: Yazılım, donanım, ağlar, veri tabanları  
-- **İş Dünyası**: Kurumsal çözümler, ERP, CRM, e-ticaret  
-- **İnsan Faktörü**: Kullanıcı deneyimi, güvenlik, etik  
+Biyomedikal Mühendisliği, **sağlık ve mühendisliği birleştiren köprü** niteliğindedir.  
+- **Tıp + Mühendislik**: İnsan sağlığı için cihaz, sistem ve yazılım geliştirme  
+- **Ara alanlar**: Yapay organlar, biyosensörler, medikal görüntüleme, rehabilitasyon teknolojileri  
+- **Uygulamalar**: Hastane cihazları, protezler, yapay zekâ destekli teşhis sistemleri  
 
-💡 Kısacası: *“Teknolojiyi sadece üretmek değil, aynı zamanda yönetmek ve işlevsel hale getirmek.”*  
+💡 Kısacası: *“Mühendisliğin zekâsını insan sağlığına hizmet için kullanmak.”*  
 
 ---
 
 ## 📚 Temel Dersler
-- **Yazılım Geliştirme** (Java, Python, C#)  
-- **Veri Tabanı Yönetimi** (SQL, NoSQL)  
-- **Ağ ve İletişim Sistemleri**  
-- **Bilgi Güvenliği**  
-- **Sistem Analizi ve Tasarımı**  
-- **Proje Yönetimi**  
-- **Bulut Bilişim ve Büyük Veri**  
-- **İş Süreçleri ve ERP Sistemleri**  
+- **Biyoloji ve Anatomi**  
+- **Biyokimya ve Hücre Biyolojisi**  
+- **Elektronik ve Devreler**  
+- **Biyomekanik**  
+- **Medikal Görüntüleme Sistemleri (MRI, CT, X-Ray)**  
+- **Biyosensörler ve Enstrümantasyon**  
+- **Yapay Organ ve Protez Tasarımı**  
+- **Sağlık Bilişimi ve Yapay Zekâ**  
 
 ---
 
 ## 🔧 Kullanılan Araçlar ve Teknolojiler
 | Alan | Araçlar / Teknolojiler |
 |------|------------------------|
-| Programlama | Python, Java, C#, PHP |
-| Veri Tabanı | MySQL, PostgreSQL, Oracle, MongoDB |
-| İş Süreçleri | SAP, Odoo, Dynamics 365 |
-| Bulut | AWS, Azure, Google Cloud |
-| Güvenlik | Firewalls, IDS/IPS, SIEM |
-| İş Analitiği | Power BI, Tableau, QlikView |
+| Görüntüleme | MRI, CT, PET, Ultrason |
+| Elektronik | Arduino, ESP32, Medikal sensörler |
+| Yazılım | MATLAB, Python, LabVIEW |
+| Biyosensörler | Elektrokimyasal sensörler, optik sensörler |
+| Protez & İmplant | 3D yazıcılar, biyomalzemeler |
+| Yapay Zekâ | TensorFlow, PyTorch, Medikal veri analizi |
 
 ---
 
 ## 🚀 Kariyer Alanları
-- **Sistem Analisti**  
-- **Veri Tabanı Yöneticisi**  
-- **Bilgi Güvenliği Uzmanı**  
-- **Bulut Çözümleri Mühendisi**  
-- **ERP/CRM Danışmanı**  
-- **IT Proje Yöneticisi**  
-- **İş Zekâsı Uzmanı**  
-- **Dijital Dönüşüm Lideri**  
-
----
-
-## 🎨 Cafcaflı Özellikler
-- 🌟 **Parıltı**: Teknoloji ile iş dünyasını birleştiren vizyoner bakış  
-- 🎶 **Ritim**: Proje yönetiminde düzen, sistematik ilerleme  
-- 🔮 **Gelecek**: Yapay zekâ, blockchain, metaverse entegrasyonu  
-- 🎭 **Renk**: İnsan odaklı tasarım, kullanıcı deneyimi  
+- **Medikal Cihaz Mühendisi**  
+- **Biyomekanik Uzmanı**  
+- **Medikal Görüntüleme Uzmanı**  
+- **Biyosensör ve Enstrümantasyon Mühendisi**  
+- **Sağlık Bilişimi ve Yapay Zekâ Uzmanı**  
+- **Protez ve Yapay Organ Tasarımcısı**  
+- **Akademisyen / Araştırmacı**  
 
 ---
 
 ## 📈 Öğrenme ve Gelişim
-- **Online Kurslar**: Coursera, Udemy, edX  
-- **Topluluklar**: IEEE, ACM, ISACA  
+- **Online Kurslar**: Coursera, edX, Udemy (Biomedical Engineering, Medical Imaging)  
+- **Topluluklar**: IEEE Engineering in Medicine and Biology Society, TMMOB Biyomedikal Mühendisleri  
 - **Kitaplar**:  
-  - *Management Information Systems* – Laudon & Laudon  
-  - *Information Systems for Managers* – Gabriele Piccoli  
-  - *Digital Transformation* – Thomas Siebel  
+  - *Introduction to Biomedical Engineering* – Enderle & Bronzino  
+  - *Biomedical Signal Processing* – Rangayyan  
+  - *Medical Instrumentation* – John G. Webster  
 
 ---
 
 ## 🧭 Önerilen Yol Haritası
-1. **Temel Programlama ve Veri Tabanı**  
-2. **Sistem Analizi ve Tasarımı**  
-3. **Ağ ve Güvenlik**  
-4. **Bulut ve Büyük Veri**  
-5. **ERP/CRM Sistemleri**  
-6. **Proje Yönetimi ve Liderlik**  
-7. **Dijital Dönüşüm ve İnovasyon**  
+1. **Temel Biyoloji ve Anatomi**  
+2. **Elektronik ve Devreler**  
+3. **Medikal Görüntüleme ve Biyosensörler**  
+4. **Protez ve Yapay Organ Tasarımı**  
+5. **Sağlık Bilişimi ve Yapay Zekâ**  
+6. **Ar-Ge ve Klinik Uygulamalar**  
+7. **Sürdürülebilir ve Etik Sağlık Teknolojileri**  
 
 ---
 
 ## 🌍 Etik ve Toplumsal Boyut
-- **Veri Gizliliği**  
-- **Siber Güvenlik**  
-- **İş Etiği**  
-- **Sürdürülebilirlik**  
+- **Hasta Güvenliği ve Veri Gizliliği**  
+- **Etik Medikal Araştırmalar**  
+- **Sürdürülebilir Sağlık Teknolojileri**  
+- **Toplumsal Fayda ve Erişilebilirlik**  
 
 ---
 
 ## 📊 Gelecek Trendler
-- **Blockchain tabanlı iş sistemleri**  
-- **Yapay zekâ destekli karar mekanizmaları**  
-- **Metaverse iş toplantıları**  
-- **IoT ile akıllı fabrikalar**  
+- **Yapay Zekâ destekli teşhis sistemleri**  
+- **Giyilebilir sağlık teknolojileri**  
+- **Nano-biyoteknoloji ile ilaç taşıma sistemleri**  
+- **3D yazıcı ile organ üretimi (biyoprinting)**  
+- **Tele-sağlık ve uzaktan hasta takibi**  
 
 ---
 
 ## ✅ Katkı
-Bu README, bilişim sistemleri mühendisliği alanında öğrenim gören veya çalışan herkesin katkısına açıktır. Yeni kaynaklar, araçlar veya öneriler eklenebilir.  
+Bu README, biyomedikal mühendisliği alanında öğrenim gören veya çalışan herkesin katkısına açıktır. Yeni kaynaklar, araçlar veya öneriler eklenebilir.  
 
